@@ -34,7 +34,7 @@ level one = {
                     "C. Topic.1 Q5 Opt.19",
                     "D. Topic.1 Q5 Opt.20"
                 },
-                .answer = {'B', 'C', 'A', 'D', 'D'}
+                .answer = {'C', 'A', 'B', 'D', 'C'}
             }
         },
         [1] = {
@@ -69,7 +69,7 @@ level one = {
                     "C. Topic.2 Q5 Opt.19",
                     "D. Topic.2 Q5 Opt.20"
                 },
-                .answer = {'B', 'C', 'A', 'D', 'D'}
+                .answer = {'A', 'D', 'B', 'C', 'D'}
             }
         },
         [2] = {
@@ -104,7 +104,7 @@ level one = {
                     "C. Topic.3 Q5 Opt.19",
                     "D. Topic.3 Q5 Opt.20",
                 },
-                .answer = {'B', 'C', 'A', 'D', 'D'}
+                .answer = {'B', 'A', 'C', 'D', 'A'}
             }
         },
         [3] = {
@@ -139,7 +139,7 @@ level one = {
                     "C. Topic.4 Q5 Opt.19",
                     "D. Topic.4 Q5 Opt.20",
                 },
-                .answer = {'B', 'C', 'A', 'D', 'D'}
+                .answer = {'D', 'C', 'A', 'B', 'B'}
             }
         },
         [4] = {
@@ -174,7 +174,7 @@ level one = {
                     "C. Topic.5 Q5 Opt.19",
                     "D. Topic.5 Q5 Opt.20",
                 },
-                .answer = {'B', 'C', 'A', 'D', 'D'}
+                .answer = {'C', 'D', 'A', 'B', 'C'}
             }
         }
     }
