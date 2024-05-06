@@ -1,0 +1,6 @@
+Level 1 Cheat sheet
+Q1 = {'C', 'A', 'B', 'D', 'C'} There can be 5 random question for the first question there for 5 possible answers
+Q2 = {'A', 'D', 'B', 'C', 'D'}
+Q3 = {'B', 'A', 'C', 'D', 'A'}
+Q4 = {'D', 'C', 'A', 'B', 'B'}
+Q5 = {'C', 'D', 'A', 'B', 'C'}

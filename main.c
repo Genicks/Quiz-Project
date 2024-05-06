@@ -1,87 +1,72 @@
 #include "functions.c"
 #include <stdbool.h>
-
-int gameLevel(level x, int i, int array[5][2], int *totalScore, int *fullScore)
-{
-  underScoreDivider();
-  printf("---------------- LEVEL .%d ----------------\n", i);
-  underScoreDivider();
-  int score = questionScores(x, array, fullScore);
-  *totalScore += score;
-
-  printf("Overall Score: %d/%d", *totalScore, *fullScore);
-  return score;
-}
-
-bool levelPassedCheck(int score, int i)
-{
-  if (score > 4)
-  {
-    printf("\tLevel .%d: Passed\n\n", i);
-    return true;
-  }
-  else
-    printf("\tLevel .%d Failed\n\n", i);
-  return false;
-}
-
+#include <ctype.h>
 
 int main()
 {
   int array[5][2];
-  arrayRandomize(array);
-  int totalScore = 0;
-  int fullScore = 0;
+  int highScore[1][2] = {{0, 0}};
+  bool playAgainCheck = false;
+  int highScores[5][2] = {0};
 
-  for (int i = 0; i < 6; i++)
+  do
   {
-    if (i == 0)
+    int currentScore[1][2] = {{0, 0}};
+    arrayRandomize(array);
+    for (int i = 0; i < 6; i++)
     {
-      int score = gameLevel(one, i + 1, array, &totalScore, &fullScore);
-      if (!levelPassedCheck(score, i + 1))
+      if (i == 0)
       {
-        break;
+        int score = gameLevel(one, i + 1, array, &currentScore[0][0], &currentScore[0][1], &highScore);
+        if (!levelPassedCheck(score, i + 1))
+        {
+          break;
+        }
+      }
+      else if (i == 1)
+      {
+        int score = gameLevel(one, i + 1, array, &currentScore[0][0], &currentScore[0][1], &highScore);
+        if (!levelPassedCheck(score, i + 1))
+        {
+          break;
+        }
+      }
+      else if (i == 2)
+      {
+        int score = gameLevel(one, i + 1, array, &currentScore[0][0], &currentScore[0][1], &highScore);
+        if (!levelPassedCheck(score, i + 1))
+        {
+          break;
+        }
+      }
+      else if (i == 3)
+      {
+        int score = gameLevel(one, i + 1, array, &currentScore[0][0], &currentScore[0][1], &highScore);
+        if (!levelPassedCheck(score, i + 1))
+        {
+          break;
+        }
+      }
+      else if (i == 4)
+      {
+        int score = gameLevel(one, i + 1, array, &currentScore[0][0], &currentScore[0][1], &highScore);
+        if (!levelPassedCheck(score, i + 1))
+        {
+          break;
+        }
+      }
+      else if (i == 5)
+      {
+        int score = gameLevel(one, i + 1, array, &currentScore[0][0], &currentScore[0][1], &highScore);
+        if (!levelPassedCheck(score, i + 1))
+        {
+          break;
+        }
       }
     }
-    else if (i == 1)
-    {
-      int score = gameLevel(one, i + 1, array, &totalScore, &fullScore);
-      if (!levelPassedCheck(score, i + 1))
-      {
-        break;
-      }
-    }
-    else if (i == 2)
-    {
-      int score = gameLevel(one, i + 1, array, &totalScore, &fullScore);
-      if (!levelPassedCheck(score, i + 1))
-      {
-        break;
-      }
-    }
-    else if (i == 3)
-    {
-      int score = gameLevel(one, i + 1, array, &totalScore, &fullScore);
-      if (!levelPassedCheck(score, i + 1))
-      {
-        break;
-      }
-    }
-    else if (i == 4)
-    {
-      int score = gameLevel(one, i + 1, array, &totalScore, &fullScore);
-      if (!levelPassedCheck(score, i + 1))
-      {
-        break;
-      }
-    }
-    else if (i == 5)
-    {
-      int score = gameLevel(one, i + 1, array, &totalScore, &fullScore);
-      if (!levelPassedCheck(score, i + 1))
-      {
-        break;
-      }
-    }
-  }
+
+    highScoreModifier(highScores, highScore);
+    playAgainAsk(&playAgainCheck);
+    printf("\n%d", highScore[0][0]);
+  } while (playAgainCheck);
 }
