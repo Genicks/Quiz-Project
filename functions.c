@@ -4,7 +4,7 @@
 #include <time.h>
 #include <ctype.h>
 #include <unistd.h>
-#include "data_QuestionLevel1.c"
+#include "Levels\data_QuestionLevel1.c"
 
 //! Creates a 2D Array with random values for the second column
 void arrayRandomize(int array[5][2])
@@ -61,9 +61,9 @@ int askQuestion(level x, int y, int z)
     char answer = (x.subjects[y].questions.answer[z]);
     QuestionGenerator(x, (y), (z));
     printf("Input: ");
-    // scanf(" %c", &input);
-    input = answer;
-    printf("\n");
+    scanf(" %c", &input);
+    // input = answer;
+    // printf("\n");
     dashDivider();
     // sleep(1);// Allows Readability of content
     printf("Answer: %c\n", answer);
@@ -202,5 +202,7 @@ int recentScoreModifier(int (*recentScores)[2], int currentScore[1][2])
     {
         printf("%d - %d/%d\n", i + 1, recentScores[i][0], recentScores[i][1]);
     }
+    currentScore[0][0] = 0;
+    currentScore[0][1] = 0;
     return 0;
 }
