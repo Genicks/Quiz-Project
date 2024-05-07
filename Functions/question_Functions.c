@@ -27,9 +27,9 @@ int askQuestion(level x, int y, int z)
     // input = answer; //*For testing purposes
     // printf("\n"); //*For Formatting during test
     dashDivider();
-    // sleep(1);// Allows Readability of content
+    sleep(1);// Allows Readability of content
     printf("Answer: %c\n", answer);
-    // sleep(1);// Allows player to know the correct Answer
+    sleep(1);// Allows player to know the correct Answer
     
     return answerCheck(answer, input);
 }
@@ -45,7 +45,7 @@ int questionScores(level x, int array[5][2], int *fullScore)
         int score = (askQuestion(x, (array[i][0]), (array[i][1])));
         totalScore += score;
         printf("\tScore: %d/%d\n", totalScore, 5);
-        // sleep(1);// Allows scores to be read
+        sleep(1);// Allows scores to be read
         if (i == 4)
         {
             dashDivider();

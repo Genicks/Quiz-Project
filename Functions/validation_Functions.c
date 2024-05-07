@@ -6,13 +6,13 @@ int answerCheck(char answer, char input)
     if (answer == toupper(input))
     {
         printf("Status: Correct  ");
-        // sleep(1);
+        sleep(1);
         return 1;
     }
     else
     {
         printf("Status: Incorrect");
-        // sleep(1);
+        sleep(1);
         return 0;
     }
 }
