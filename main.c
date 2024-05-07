@@ -29,7 +29,7 @@ int main()
       }
       else if (i == 1)
       {
-        int score = gameLevel(one, i + 1, array, &currentScore[0][0], &currentScore[0][1], &highScore);
+        int score = gameLevel(two, i + 1, array, &currentScore[0][0], &currentScore[0][1], &highScore);
         if (!levelPassedCheck(score, i + 1))
         {
           recentScoreModifier(highScores, highScore);
@@ -39,7 +39,7 @@ int main()
       }
       else if (i == 2)
       {
-        int score = gameLevel(one, i + 1, array, &currentScore[0][0], &currentScore[0][1], &highScore);
+        int score = gameLevel(three, i + 1, array, &currentScore[0][0], &currentScore[0][1], &highScore);
         if (!levelPassedCheck(score, i + 1))
         {
           recentScoreModifier(highScores, highScore);
@@ -49,7 +49,7 @@ int main()
       }
       else if (i == 3)
       {
-        int score = gameLevel(one, i + 1, array, &currentScore[0][0], &currentScore[0][1], &highScore);
+        int score = gameLevel(four, i + 1, array, &currentScore[0][0], &currentScore[0][1], &highScore);
         if (!levelPassedCheck(score, i + 1))
         {
           recentScoreModifier(highScores, highScore);
@@ -59,7 +59,7 @@ int main()
       }
       else if (i == 4)
       {
-        int score = gameLevel(one, i + 1, array, &currentScore[0][0], &currentScore[0][1], &highScore);
+        int score = gameLevel(five, i + 1, array, &currentScore[0][0], &currentScore[0][1], &highScore);
         if (!levelPassedCheck(score, i + 1))
         {
           recentScoreModifier(highScores, highScore);
