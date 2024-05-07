@@ -23,9 +23,9 @@ int askQuestion(level x, int y, int z)
     QuestionGenerator(x, (y), (z));
 
     printf("Input: ");
-    // scanf(" %c", &input);
-    input = answer;
-    printf("\n");
+    scanf(" %c", &input);
+    // input = answer; //*For testing purposes
+    // printf("\n"); //*For Formatting during test
     dashDivider();
     // sleep(1);// Allows Readability of content
     printf("Answer: %c\n", answer);
