@@ -1,4 +1,4 @@
-#include "functions.c"
+#include "Functions/main_Functions.c"
 #include <stdbool.h>
 #include <ctype.h>
 
