@@ -8,12 +8,14 @@ int main()
   int highScore[1][2] = {{0, 0}};
   bool playAgainCheck = false;
   int highScores[5][2] = {0};
+  int recentScores[5][2] = {0};
 
   do
   {
-    int currentScore[1][2] = {{0, 0}};
+    int currentScore[1][2] = {0};
     arrayRandomize(array);
-    for (int i = 0; i < 6; i++)
+
+    for (int i = 0; i < 5; i++)
     {
       if (i == 0)
       {
@@ -22,6 +24,7 @@ int main()
         {
           break;
         }
+        recentScoreModifier(highScores, highScore);
       }
       else if (i == 1)
       {
@@ -30,6 +33,7 @@ int main()
         {
           break;
         }
+        recentScoreModifier(highScores, highScore);
       }
       else if (i == 2)
       {
@@ -38,7 +42,8 @@ int main()
         {
           break;
         }
-      }
+        recentScoreModifier(highScores, highScore);
+            }
       else if (i == 3)
       {
         int score = gameLevel(one, i + 1, array, &currentScore[0][0], &currentScore[0][1], &highScore);
@@ -46,6 +51,7 @@ int main()
         {
           break;
         }
+        recentScoreModifier(highScores, highScore);
       }
       else if (i == 4)
       {
@@ -54,19 +60,11 @@ int main()
         {
           break;
         }
-      }
-      else if (i == 5)
-      {
-        int score = gameLevel(one, i + 1, array, &currentScore[0][0], &currentScore[0][1], &highScore);
-        if (!levelPassedCheck(score, i + 1))
-        {
-          break;
-        }
+        recentScoreModifier(highScores, highScore);
       }
     }
 
     highScoreModifier(highScores, highScore);
     playAgainAsk(&playAgainCheck);
-    printf("\n%d", highScore[0][0]);
   } while (playAgainCheck);
 }

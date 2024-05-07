@@ -95,7 +95,7 @@ int questionScores(level x, int array[5][2], int *fullScore)
 int gameLevel(level x, int i, int array[5][2], int *fullScore, int *totalScore, int (*highScore)[1][2])
 {
     if (i != 1)
-        printf("\n\n\n\n");
+        printf("\n\n");
     underScoreDivider();
     printf("---------------- LEVEL .%d ----------------\n", i);
     underScoreDivider();
@@ -107,8 +107,8 @@ int gameLevel(level x, int i, int array[5][2], int *fullScore, int *totalScore, 
         (*highScore)[0][0] = *totalScore;
         (*highScore)[0][1] = *fullScore;
     }
-
     printf("Current Score: %d/%d", *totalScore, *fullScore);
+
     return score;
 }
 
@@ -116,7 +116,7 @@ int gameLevel(level x, int i, int array[5][2], int *fullScore, int *totalScore, 
 bool levelPassedCheck(int score, int i)
 {
     // if ((4 >= score) || (score <= 5))
-    if ((score == 5)||(score == 4))
+    if ((score == 5) || (score == 4))
     {
         printf("\tLevel .%d: Passed\n", i);
         return true;
@@ -157,29 +157,50 @@ void playAgainAsk(bool *playAgainCheck)
 
 int highScoreModifier(int (*highScores)[2], int currentScore[1][2])
 {
-    if (currentScore[1][0] > highScores[4][0])
+    if (currentScore[0][0] > highScores[4][0])
     {
         int i = 4;
-        while (i >= 0 && currentScore[1][0] >= highScores[i][0])
+        while (i >= 0 && currentScore[0][1] > highScores[i][0])
         {
             if (i < 4)
             {
                 highScores[i + 1][0] = highScores[i][0];
                 highScores[i + 1][1] = highScores[i][1];
             }
-            highScores[i][0] = currentScore[1][0];
-            highScores[i][1] = currentScore[1][1];
+            highScores[i][0] = currentScore[0][0];
+            highScores[i][1] = currentScore[0][1];
             i--;
         }
     }
 
+    printf("\nHighest Scores\n");
     for (int i = 0; i < 5; i++)
     {
-        printf("%d Highest: %d/%d\n", i, highScores[i][0], highScores[i][1]);
+        printf("%d - %d/%d\n", i + 1, highScores[i][0], highScores[i][1]);
     }
-    printf("\n\n%d\n", currentScore[0][0]);
-    printf("%d\n", highScores[0][0]);
+    currentScore[0][0] = 0;
+    currentScore[0][1] = 0;
 
+    return 0;
+}
 
-    return 0; // Assuming 0 indicates successful completion
+//!  The following functions update and display the top 5 highest scores achieved throughout the game.
+
+int recentScoreModifier(int (*recentScores)[2], int currentScore[1][2])
+{
+
+    for (int i = 3; i >= 0; i--)
+    {
+        recentScores[i + 1][0] = recentScores[i][0];
+        recentScores[i + 1][1] = recentScores[i][1];
+    }
+    recentScores[0][0] = currentScore[0][0];
+    recentScores[0][1] = currentScore[0][1];
+
+    printf("\nRecent Scores\n");
+    for (int i = 0; i < 5; i++)
+    {
+        printf("%d - %d/%d\n", i + 1, recentScores[i][0], recentScores[i][1]);
+    }
+    return 0;
 }
