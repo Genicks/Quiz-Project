@@ -1,4 +1,6 @@
-// Define structure to hold questions, Option & answers Sheet
+#ifndef QUIZ_STRUCTS_H
+#define QUIZ_STRUCTS_H
+
 typedef struct 
 {
     char question[5][100];
@@ -6,7 +8,6 @@ typedef struct
     char answer[5];
 } QA;
 
-// Define structure to hold questions and answers for a subject
 typedef struct 
 {
     char name[20];
@@ -15,8 +16,9 @@ typedef struct
     QA answers;
 } subject;
 
-// Define structure to represent levels containing subjects
 typedef struct 
 {
     subject subjects[5];
 } level;
+
+#endif /* QUIZ_STRUCTS_H */

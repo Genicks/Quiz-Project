@@ -4,7 +4,11 @@
 #include <time.h>
 #include <ctype.h>
 #include <unistd.h>
-#include "data_QuestionLevels.c"
+#include "Question_Levels/level_5.c"
+#include "Question_Levels/level_4.c"
+#include "Question_Levels/level_3.c"
+#include "Question_Levels/level_2.c"
+#include "Question_Levels/level_1.c"
 
 //! Creates a 2D Array with random values for the second column
 void arrayRandomize(int array[5][2])
