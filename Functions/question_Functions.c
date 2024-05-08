@@ -1,10 +1,8 @@
-// #include "../Question_Levels/level_5.c"
-// #include "../Question_Levels/level_4.c"
 #include "../Question_Levels/level_3.c"
 #include "../Question_Levels/level_2.c"
 #include "../Question_Levels/level_1.c"
 
-//! Generates a random question from a random topic as defined by a structure
+//! Generates a random question from a specified topic as defined by a structure
 void QuestionGenerator(level x, int randSubject, int randNum)
 {
     printf("\n%s\n", x.subjects[randSubject].questions.question[randNum]);

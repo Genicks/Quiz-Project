@@ -21,4 +21,4 @@ typedef struct
     subject subjects[5];
 } level;
 
-#endif /* QUIZ_STRUCTS_H */
+#endif 
