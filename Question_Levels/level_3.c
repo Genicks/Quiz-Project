@@ -2,85 +2,86 @@
 
 level three = {
     .subjects = {
-        [0] = {
+      [0] = {
             .name = "History & People",
             .questions = {
                 .question = {
-                    "Lv.3 Topic.1 Q1A",
-                    "Lv.3 Topic.1 Q2A",
-                    "Lv.3 Topic.1 Q3A",
-                    "Lv.3 Topic.1 Q4A",
-                    "Lv.3 Topic.1 Q5A"
+                    "Which ethnic group makes up the majority of the population in Guyana?",
+                    "What is the capital city of Guyana?",
+                    "Guyana shares its eastern border with which country?",
+                    "What is the official language of Guyana?",
+                    "Who is considered the national hero of Guyana for leading the country to independence?"
                 },
                 .option = {
-                    "A. Topic.1 Q1 Opt.1", "B. Topic.1 Q1 Opt.2", "C. Topic.1 Q1 Opt.3", "D. Topic.1 Q1 Opt.4",
-                    "A. Topic.1 Q2 Opt.5", "B. Topic.1 Q2 Opt.6", "C. Topic.1 Q2 Opt.7", "D. Topic.1 Q2 Opt.8",
-                    "A. Topic.1 Q3 Opt.9", "B. Topic.1 Q3 Opt.10", "C. Topic.1 Q3 Opt.11", "D. Topic.1 Q3 Opt.12",
-                    "A. Topic.1 Q4 Opt.13", "B. Topic.1 Q4 Opt.14", "C. Topic.1 Q4 Opt.15", "D. Topic.1 Q4 Opt.16",
-                    "A. Topic.1 Q5 Opt.17", "B. Topic.1 Q5 Opt.18", "C. Topic.1 Q5 Opt.19", "D. Topic.1 Q5 Opt.20"
+                    "A. Afro-Guyanese", "B. Indo-Guyanese", "C. Amerindians", "D. Portuguese-Guyanese",
+                    "A. Georgetown", "B. New Amsterdam", "C. Linden", "D. Anna Regina",
+                    "A. Suriname", "B. Venezuela", "C. Brazil", "D. French Guiana",
+                    "A. Spanish", "B. English", "C. Dutch", "D. Portuguese",
+                    "A. Forbes Burnham", "B. Janet Jagan", "C. Cheddi Jagan", "D. Cuffy"
                 },
-                .answer = {'C', 'A', 'B', 'D', 'C'}
+                .answer = {'B', 'A', 'D', 'B', 'D'}
             }
         },
-       [1] = {
-    .name = "Foods & Cuisines",
-    .questions = {
-        .question = {
-            "What is the Amerindian dish that is cooked\nyearly on the holiday of Christmas?",
-            "What is the number of currys that are being\nserved in the water lily leaf at hindu religious functions?",
-            "What is the number of currys that are being\nserved in the water lily leaf at hindu religious functions?",
-            "What is the colored name of the British and\nIrish puddings that are usually eat with a sour?",
-            "What is the colored name of the British and\nIrish puddings that are usually eat with a sour?"
-        },
-        .option = {
-            "A. Metemgee", "B. Cook up", "C. Pepper Pot", "D. Curry and Roti",
-            "A. 1", "B. 5", "C. 10", "D. 7",
-            "A. 1", "B. 5", "C. 10", "D. 7",
-            "A. White and black", "B. Yellow and red", "C. Red and black", "D. Blue and green",
-            "A. White and black", "B. Yellow and red", "C. Red and black", "D. Blue and green"
-        },
-        .answer = {'C', 'D', 'D', 'A', 'A'}
-    }
-},
 
-        [2] = {
+       [1] = {
+            .name = "Foods & Cuisines",
+            .questions = {
+                .question = {
+                    "What is the Amerindian dish that is cooked\nyearly on the holiday of Christmas?",
+                    "What is the number of currys that are being\nserved in the water lily leaf at hindu religious functions?",
+                    "What is the number of currys that are being\nserved in the water lily leaf at hindu religious functions?",
+                    "What is the colored name of the British and\nIrish puddings that are usually eat with a sour?",
+                    "What is the colored name of the British and\nIrish puddings that are usually eat with a sour?"
+                },
+                .option = {
+                    "A. Metemgee", "B. Cook up", "C. Pepper Pot", "D. Curry and Roti",
+                    "A. 1", "B. 5", "C. 10", "D. 7",
+                    "A. 1", "B. 5", "C. 10", "D. 7",
+                    "A. White and black", "B. Yellow and red", "C. Red and black", "D. Blue and green",
+                    "A. White and black", "B. Yellow and red", "C. Red and black", "D. Blue and green"
+                },
+                .answer = {'C', 'D', 'D', 'A', 'A'}
+            }
+        },
+
+       [2] = {
             .name = "Holidays",
             .questions = {
                 .question = {
-                    "Lv.3 Topic.3 Q1",
-                    "Lv.3 Topic.3 Q2",
-                    "Lv.3 Topic.3 Q3",
-                    "Lv.3 Topic.3 Q4",
-                    "Lv.3 Topic.3 Q5"
+                    "Which holiday in Guyana commemorates the end of slavery and the emancipation of enslaved Africans?",
+                    "What is the national holiday celebrated on February 23rd in Guyana, marking the anniversary of the country becoming a republic in 1970?",
+                    "Which holiday in Guyana celebrates the contributions of the country's indigenous peoples and their cultures?",
+                    "Which holiday in Guyana is known as the \"Festival of Lights\" and commemorates the victory of light over darkness and good over evil?",
+                    "What holiday in Guyana marks the birth of the Prophet Muhammad and is observed by Muslims in the country?"
                 },
                 .option = {
-                    "A. Topic.3 Q1 Opt.1", "B. Topic.3 Q1 Opt.2", "C. Topic.3 Q1 Opt.3", "D. Topic.3 Q1 Opt.4",
-                    "A. Topic.3 Q2 Opt.5", "B. Topic.3 Q2 Opt.6", "C. Topic.3 Q2 Opt.7", "D. Topic.3 Q2 Opt.8",
-                    "A. Topic.3 Q3 Opt.9", "B. Topic.3 Q3 Opt.10", "C. Topic.3 Q3 Opt.11", "D. Topic.3 Q3 Opt.12",
-                    "A. Topic.3 Q4 Opt.13", "B. Topic.3 Q4 Opt.14", "C. Topic.3 Q4 Opt.15", "D. Topic.3 Q4 Opt.16",
-                    "A. Topic.3 Q5 Opt.17", "B. Topic.3 Q5 Opt.18", "C. Topic.3 Q5 Opt.19", "D. Topic.3 Q5 Opt.20",
+                    "A. Emancipation Day", "B. Republic Day", "C. Mashramani", "D. Arrival Day",
+                    "A. Independence Day", "B. Arrival Day", "C. Mashramani", "D. Republic Day",
+                    "A. Indigenous Peoples' Day", "B. Mashramani", "C. Phagwah", "D. Amerindian Heritage Day",
+                    "A. Diwali", "B. Eid-ul-Fitr", "C. Youman Nabi", "D. Phagwah",
+                    "A. Eid-ul-Fitr", "B. Diwali", "C. Youman Nabi", "D. Phagwah"
                 },
-                .answer = {'B', 'A', 'C', 'D', 'A'}
+                .answer = {'A', 'D', 'D', 'A', 'C'}
             }
         },
         [3] = {
             .name = "National Symbols",
             .questions = {
                 .question = {
-                    "Lv.3 Topic.4 Q1",
-                    "Lv.3 Topic.4 Q2",
-                    "Lv.3 Topic.4 Q3",
-                    "Lv.3 Topic.4 Q4",
-                    "Lv.3 Topic.4 Q5"
+                    "What are the colors of the Guyanese flag?",
+                    "What does the green color on the Guyanese flag represent?",
+                    "Which animal is depicted on the coat of arms of Guyana?",
+                    "What is the motto inscribed on the Guyanese coat of arms?",
+                    "What is the significance of the gold color on the Guyanese coat of arms?"
                 },
                 .option = {
-                    "A. Topic.4 Q1 Opt.1", "B. Topic.4 Q1 Opt.2", "C. Topic.4 Q1 Opt.3", "D. Topic.4 Q1 Opt.4",
-                    "A. Topic.4 Q2 Opt.5", "B. Topic.4 Q2 Opt.6", "C. Topic.4 Q2 Opt.7", "D. Topic.4 Q2 Opt.8",
-                    "A. Topic.4 Q3 Opt.9", "B. Topic.4 Q3 Opt.10", "C. Topic.4 Q3 Opt.11", "D. Topic.4 Q3 Opt.12",
-                    "A. Topic.4 Q4 Opt.13", "B. Topic.4 Q4 Opt.14", "C. Topic.4 Q4 Opt.15", "D. Topic.4 Q4 Opt.16",
-                    "A. Topic.4 Q5 Opt.17", "B. Topic.4 Q5 Opt.18", "C. Topic.4 Q5 Opt.19", "D. Topic.4 Q5 Opt.20",
+                    "A. Red, white, and pink", "B. Green, gold, and black", "C. Red, yellow, and blue", "D. all of the above",
+                    "A. Agriculture and forests", "B. Hope and aspiration", "C. Mineral wealth", "D. Unity and peace",
+                    "A. Jaguar", "B. Anaconda", "C. Harpy eagle", "D. Capybara",
+                    "A. \"One People, One Nation, One Destiny\"", "B. \"Strength in Unity\"", "C. \"Land of Many Waters\"", "D. \"Forward Together\"",
+                    "A. Mineral wealth", "B. Agricultural abundance", "C. Unity and solidarity", "D. Spiritual richness"
                 },
-                .answer = {'D', 'C', 'A', 'B', 'B'}
+                .answer = {'B', 'A', 'A', 'A', 'A'}
             }
         },
       [4] = {
