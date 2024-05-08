@@ -15,7 +15,7 @@ int main()
     int currentScore[1][2] = {0};
     arrayRandomize(array);
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < 3; i++)
     {
       if (i == 0)
       {
@@ -40,26 +40,6 @@ int main()
       else if (i == 2)
       {
         int score = gameLevel(three, i + 1, array, &currentScore[0][0], &currentScore[0][1], &highScore);
-        if (!levelPassedCheck(score, i + 1))
-        {
-          recentScoreModifier(highScores, highScore);
-          break;
-        }
-        recentScoreModifier(highScores, highScore);
-      }
-      else if (i == 3)
-      {
-        int score = gameLevel(four, i + 1, array, &currentScore[0][0], &currentScore[0][1], &highScore);
-        if (!levelPassedCheck(score, i + 1))
-        {
-          recentScoreModifier(highScores, highScore);
-          break;
-        }
-        recentScoreModifier(highScores, highScore);
-      }
-      else if (i == 4)
-      {
-        int score = gameLevel(five, i + 1, array, &currentScore[0][0], &currentScore[0][1], &highScore);
         if (!levelPassedCheck(score, i + 1))
         {
           recentScoreModifier(highScores, highScore);

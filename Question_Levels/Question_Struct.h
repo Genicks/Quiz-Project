@@ -3,7 +3,7 @@
 
 typedef struct 
 {
-    char question[5][100];
+    char question[5][200];
     char option[20][50];
     char answer[5];
 } QA;
