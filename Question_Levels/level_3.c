@@ -26,11 +26,11 @@ level three = {
     .name = "Foods & Cuisines",
     .questions = {
         .question = {
-            "What is the Amerindian dish that is cooked yearly on the holiday of Christmas?",
-            "What is the number of currys that are being served in the water lily leaf at hindu religious functions?",
-            "What is the number of currys that are being served in the water lily leaf at hindu religious functions?",
-            "What is the colored name of the British and Irish puddings that are usually eat with a sour?",
-            "What is the colored name of the British and Irish puddings that are usually eat with a sour?"
+            "What is the Amerindian dish that is cooked\nyearly on the holiday of Christmas?",
+            "What is the number of currys that are being\nserved in the water lily leaf at hindu religious functions?",
+            "What is the number of currys that are being\nserved in the water lily leaf at hindu religious functions?",
+            "What is the colored name of the British and\nIrish puddings that are usually eat with a sour?",
+            "What is the colored name of the British and\nIrish puddings that are usually eat with a sour?"
         },
         .option = {
             "A. Metemgee", "B. Cook up", "C. Pepper Pot", "D. Curry and Roti",
@@ -87,11 +87,11 @@ level three = {
     .name = "Landmarks",
     .questions = {
         .question = {
-            "What is the name of the bridge located inside the botanical gardens?",
-            "What is another name for the Cheddi Jagan Research Centre?",
-            "What is the name of the two (2) islands that are said to be located at the head of the demerara river?",
-            "The famous beach Shell beach is located on the essequibo river in the town of Bartica.",
-            "The christianburg water wheel was built in the 19th century in the town of Liden."
+            "What is the name of the bridge located\ninside the botanical gardens?",
+            "What is another name for the Cheddi Jagan\nResearch Centre?",
+            "What is the name of the two (2) islands that\nare said to be located at the head of the demerara river?",
+            "The famous beach Shell beach is located on the\nessequibo river in the town of Bartica.",
+            "The christianburg water wheel was built in the\n19th century in the town of Liden."
         },
         .option = {
             "A. Harbour Bridge", "B. Kissing bridge", "C. Hugging Bridge", "D. Brooklyn Bridge",

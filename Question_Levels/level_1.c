@@ -48,8 +48,8 @@ level one = {
                 .question = {
                     "What is the national holiday celebrated on May 26th in Guyana?",
                     "Which holiday is known as the festival of colors in Guyana?",
-                    "Which holiday celebrates the arrival of indentured laborers from India to Guyana in 1838?",
-                    "Which holiday celebrates the birth of Jesus Christ and is observed by Christians in Guyana?",
+                    "Which holiday celebrates the arrival of indentured laborers\nfrom India to Guyana in 1838?",
+                    "Which holiday celebrates the birth of Jesus Christ and is\nobserved by Christians in Guyana?",
                     "What is the national holiday celebrated on February 23rd in Guyana?"
                 },
                 .option = {
@@ -69,7 +69,7 @@ level one = {
                     "Which bird is the national bird of Guyana?",
                     "What is the national tree of Guyana?",
                     "What is the national fruit of Guyana?",
-                    "Which fruit is recognized as the national fruit of Guyana, enjoyed for its sweet and tangy flavor?",
+                    "Which fruit is recognized as the national fruit of Guyana,\nenjoyed for its sweet and tangy flavor?",
                     "What dish is considered the national dish of Guyana?"
                 },
                 .option = {

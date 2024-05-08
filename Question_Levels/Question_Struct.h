@@ -12,8 +12,6 @@ typedef struct
 {
     char name[20];
     QA questions;
-    QA options;
-    QA answers;
 } subject;
 
 typedef struct 
